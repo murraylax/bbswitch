@@ -1,0 +1,133 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{calc}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{fancyheadings}
+ 
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{rotating}
+\usepackage{harvard}
+\usepackage{aer}
+\usepackage{aertt}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{multirow}
+
+\setlength{\voffset}{-0.25in}
+\setlength{\topmargin}{0pt}
+\setlength{\hoffset}{0pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{.4in}
+\setlength{\marginparsep}{0pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\marginparpush}{0pt}
+\setlength{\footskip}{.1in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9.25in}
+\setlength{\parskip}{0pc}
+
+\renewcommand{\baselinestretch}{1.5}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\prbf}[1]{\textbf{#1}}
+\newcommand{\prit}[1]{\textit{#1}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bdm}{\begin{displaymath}}
+\newcommand{\edm}{\end{displaymath}}
+\newcommand{\script}[1]{\begin{cal}#1\end{cal}}
+\newcommand{\citee}[1]{\citename{#1} (\citeyear{#1})}
+\newcommand{\h}[1]{\hat{#1}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\app}
+{
+\appendix
+}
+
+%\newcommand{\appsection}[1]
+%{
+%\let\oldthesection\thesection
+%\renewcommand{\thesection}{Appendix \oldthesection}
+%\section{#1}\let\thesection\oldthesection
+%\renewcommand{\theequation}{\thesection\arabic{equation}}
+%\setcounter{equation}{0}
+%}
+
+\newcommand{\appsection}
+{
+\appendix
+\let\oldthesection\thesection
+\renewcommand{\thesection}{Appendix \oldthesection}
+\section{}
+\renewcommand{\theequation}{\oldthesection\arabic{equation}}
+\setcounter{equation}{0}
+}
+
+
+\pagestyle{plain}
+
+\begin{document}
+
+\setcounter{page}{22}
+\setcounter{figure}{3}
+\begin{figure}
+\begin{center}
+\label{fg:data}\caption{Average Salary of Pitchers}
+\vspace*{1pc}
+\begin{tabular}{cc}
+~~~~~Reserve Clause Era (1905-1971) & ~~~~~Free Agency Era (1972-2008) \\
+\includegraphics[scale=0.35]{salary_reserve.png} & \includegraphics[scale=0.35]{salary_free.png} \\ 
+\includegraphics[scale=0.35]{salary_reserve_logscale.png} & \includegraphics[scale=0.35]{salary_free_logscale.png} \\ 
+\includegraphics[scale=0.35]{salary_reserve_detrend.png} & \includegraphics[scale=0.35]{salary_free_detrend.png} \\
+\multicolumn{2}{p{6in}}{\footnotesize{Notes: Top panels are plots of the average salary of Major League Baseball pitchers for the sample period.  The second row of plots is the same data, but drawn with a log scale on the vertical axis.  The bottom panels are detrended salary, where the trend growth rate over the sub-sample is removed according to equation (1).}}
+\end{tabular}
+\end{center}
+\end{figure}
+
+\newcolumntype{V}{>{\centering\arraybackslash} m{.4\linewidth} }
+
+\begin{figure}
+\begin{center}
+\label{fg:pitchersreg}\caption{Evolution of Regime Changes}
+\vspace*{1pc}
+\begin{tabular}{V@{}p{1in}c}
+\multicolumn{3}{c}{~~~~~Reserve Clause Era (1905-1971)} \\
+\includegraphics[scale=0.5]{reserve_regime.png} & &
+\begin{tabular}{c}
+Years in Regime 2\\
+($P(s_t=2) > 0.5$) \\\\
+1925-1926\\
+1934\\
+1946-1957\\
+1962-1966\\
+1969-1971\\\\\\
+\end{tabular}
+\\ \\
+
+\multicolumn{3}{c}{~~~~~Free Agency Era (1972-2008)} \\
+\includegraphics[scale=0.5]{free_regime.png} &  &
+\begin{tabular}{c}
+Years in Regime 2\\
+($P(s_t=2) > 0.5$) \\\\
+1991-2003\\\\\\\\\\
+\end{tabular}
+\\ 
+
+\multicolumn{3}{p{5.5in}}{\footnotesize{Notes: Graphs show the probability of being in Regime 2.  When near zero, there is strong evidence the relationship between Salaries and the explanatory variables is characterized by Regime 1.   When near one, there is strong evidence the relationship is characterized by Regime 2.}}
+\end{tabular}
+\end{center}
+\end{figure}
+
+
+\end{document}
+
+

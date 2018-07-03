@@ -1,0 +1,12 @@
+We are pleased to submit our paper, "Regime Switching and Wages in Major League Baseball under the Reserve Clause" to Cliometrica.  The purpose of this paper is to determine how the structural relationship between pay and performance changed in Major League Baseball (MLB) during the reserve clause era, a period in MLB that was characterized by tightly controlled monopsony power of owners over players and which lasted the better part of a century.  Despite this we find significant evidence of a link between pay and performance and evidence for changes in the relationship over our sample.  This paper is the first of its kind in two respects:
+
+1.  We use a new methodology for examining regime switching in long panel models.  We extend a Markov-regime switching procedure to a pooled panel data model.  This traditionally time-series methodology is popular in the macroeconometrics literature for identifying switching in macroeconomic volatility and switching in the structure of dynamic general equilibrium models. 
+
+2.  We have collected the largest historical panel dataset on MLB salaries used yet in the literature to answer our question.  Our dataset includes over 400 individuals and spans over 60 years.  Previous work in this field has been limited to data from one to five years and only rarely have datasets on this topic spanned as many as ten years.
+
+We find these two contributions actually motivate each other.  Rarely do authors have the opportunity to examine such a long panel dataset, so there has not yet been a practical use for our unique methodology that identifies structural changes in the regression relationship as time goes on.  We find our paper is ideally suited for this journal it stands out for its unique methodology, unique historical dataset, and the demonstrated ability to answer new questions with it.  We hope that you agree.  
+
+Thank you very much for considering this paper for publication.  We look forward to feedback from your editors and referees.
+
+Michael Haupert
+James Murray
